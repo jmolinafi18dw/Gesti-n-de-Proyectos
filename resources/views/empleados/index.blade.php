@@ -10,17 +10,20 @@
       <tr>
         <th>Id</th>
         <th>Nombre</th>
+        <th>Apellido</th>
         <th>Email</th>
         <th>Telefono</th>
       </tr>
 
+      @foreach($empleados as $empleado )
       <tr>
-        <td>Aqui el id</td>
+        <td>{{$empleado->id}}</td>
         <td>Aqui el nombre</td>
+        <td>Aqui el apellido</td>
         <td>Aqui el email</td>
         <td>Aqui el telefono</td>
       </tr>
-
+      @endforeach
     </table>
 
 @endsection
