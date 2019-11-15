@@ -18,10 +18,10 @@
       @foreach($empleados as $empleado )
       <tr>
         <td>{{$empleado->id}}</td>
-        <td>Aqui el nombre</td>
-        <td>Aqui el apellido</td>
-        <td>Aqui el email</td>
-        <td>Aqui el telefono</td>
+        <td>{{$empleado->nombre}}</td>
+        <td>{{$empleado->apellido}}</td>
+        <td>{{$empleado->email}}</td>
+        <td>{{$empleado->telefono}}</td>
       </tr>
       @endforeach
     </table>

@@ -28,13 +28,13 @@
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Empleados</a>
+          <a class="nav-link" href="/empleados">Empleados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos</a>
+          <a class="nav-link" href="/proyectos">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Departamentos</a>
+          <a class="nav-link" href="/departamentos">Departamentos</a>
         </li>
       </ul>
     </div>
