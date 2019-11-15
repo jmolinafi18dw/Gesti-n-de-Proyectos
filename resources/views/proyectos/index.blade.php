@@ -15,6 +15,8 @@
         <th>Fecha fin</th>
         <th>Horas estimadas</th>
       </tr>
+
+      //listar 
       @foreach($proyectos as $proyecto )
       <tr>
         <td>{{$proyecto->id}}</td>
