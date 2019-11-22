@@ -15,10 +15,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/empleados', 'EmpleadosController@index')->name('empleados.index');
+/* Route::get('/empleados', 'EmpleadosController@index')->name('empleados.index');
 
 Route::get('/departamentos', 'DepartamentosController@index')->name('departamentos.index');
 
-Route::get('/proyectos', 'ProyectosController@index')->name('proyectos.index');
+Route::get('/proyectos', 'ProyectosController@index')->name('proyectos.index'); */
 
+Route::resource('/proyectos', 'ProyectosController');
 
