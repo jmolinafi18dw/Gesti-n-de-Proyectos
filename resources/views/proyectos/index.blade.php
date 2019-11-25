@@ -15,10 +15,10 @@
         <th>Fecha fin</th>
         <th>Horas estimadas</th>
       </tr>
-      
+
       @foreach($proyectos as $proyecto )
       <tr>
-        <td>{{$proyecto->id}}</td>
+        <td><a href="{{ url('/proyectos/'.$proyecto->id) }}">{{$proyecto->id}}</a></td>
         <td>{{$proyecto->nombre}}</td>
         <td>{{$proyecto->titulo}}</td>
         <td>{{$proyecto->fechainicio}}</td>
@@ -28,5 +28,5 @@
       @endforeach
     </table>
 
-    
+
 @endsection

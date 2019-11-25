@@ -5,26 +5,31 @@
 @section('content')
 
   <h2>Proyectos</h2>
-
-    <table>
+  <table>
       <tr>
         <th>Id</th>
-        <th>Nombre</th>
-        <th>Titulo</th>
-        <th>Fecha Inicio</th>
-        <th>Fecha fin</th>
-        <th>Horas estimadas</th>
-      </tr>
-      
-      <tr>
         <td>{{$proyectos->id}}</td>
-        <td>{{$proyectos->nombre}}</td>
-        <td>{{$proyectos->titulo}}</td>
-        <td>{{$proyectos->fechainicio}}</td>
-        <td>{{$proyectos->fechafin}}</td>
-        <td>{{$proyectos->horasestimadas}}</td>
       </tr>
+      <tr>
+        <th>Nombre</th>
+        <td>{{$proyectos->nombre}}</td>
+      </tr>
+      <tr>
+        <th>Titulo</th>
+        <td>{{$proyectos->titulo}}</td>
+      </tr>
+      <tr>
+        <th>Fecha Inicio</th>
+        <td>{{$proyectos->fechainicio}}</td>
+      </tr>  
+      <tr>
+        <th>Fecha Fin</th>
+        <td>{{$proyectos->fechafin}}</td>
+      </tr>
+      <tr>
+        <th>Horas estimadas</th>
+        <td>{{$proyectos->horasestimadas}}</td>
+      </tr>    
     </table>
-
     
 @endsection

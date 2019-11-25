@@ -17,7 +17,7 @@
 
       @foreach($empleados as $empleado )
       <tr>
-        <td>{{$empleado->id}}</td>
+        <td><a href="{{ url('/empleados/'.$empleado->id) }}">{{$empleado->id}}</a></td>
         <td>{{$empleado->nombre}}</td>
         <td>{{$empleado->apellido}}</td>
         <td>{{$empleado->email}}</td>

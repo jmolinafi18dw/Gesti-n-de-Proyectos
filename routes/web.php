@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/departamentos', 'DepartamentosController@index')->name('departamentos.index');
 
 Route::get('/proyectos', 'ProyectosController@index')->name('proyectos.index'); */
+Route::resource('/empleados', 'EmpleadosController');
+
+Route::resource('/departamentos', 'DepartamentosController');
 
 Route::resource('/proyectos', 'ProyectosController');
 
